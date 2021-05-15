@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="CompanhiaAerea" id="id-72e42379efed4279b2797654428889bb" version="4.6.0">
+  <folder name="Strategy" id="id-ed4e917bf1ab4aee9e911314c8053915" type="strategy"/>
+  <folder name="Business" id="id-ccc3d244b881406985c66fa82051db92" type="business"/>
+  <folder name="Application" id="id-04af9ff2541a4c0f8c906eab5cade1e8" type="application"/>
+  <folder name="Technology &amp; Physical" id="id-e5f8fd52cd3d486aa214251fa2980510" type="technology"/>
+  <folder name="Motivation" id="id-e7ed6e4aa077445489ecc1e6cb0a6920" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-64677d76b2cc4b579112f674c66df391" type="implementation_migration"/>
+  <folder name="Other" id="id-fd9b3975ede54ebca4732962640508db" type="other"/>
+  <folder name="Relations" id="id-9aa87838fa934f5d8907b575a62d9897" type="relations"/>
+  <folder name="Views" id="id-ee689ee0f38e436ab344d2cf1084f44d" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-c23abdf956fa40398cc59e147a6ccba3"/>
+  </folder>
+</archimate:model>
