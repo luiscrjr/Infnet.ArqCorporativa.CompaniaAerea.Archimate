@@ -94,11 +94,22 @@
     <element xsi:type="archimate:BusinessRole" name="Realizar plano de manutenções" id="id-065ee0c72ead4a21b45ee4347bcf531d"/>
     <element xsi:type="archimate:BusinessRole" name="Controlar componentes da aeronave" id="id-20c813415d89453e8672c26606496951"/>
     <element xsi:type="archimate:BusinessRole" name="Realizar manuteções nas aeronaves" id="id-159fc00d993242bfa0d3a74dccb396fd"/>
+    <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-e39156d7f4584a1084b3f660f11d1e70"/>
+    <element xsi:type="archimate:BusinessRole" name="Armazenar peças para manutenções" id="id-733a999636a243fc9562e42f1d4c0557"/>
+    <element xsi:type="archimate:BusinessRole" name="Comprar componentes para manutenções" id="id-7ed3f089c7b74788b2b59105bbdebfed"/>
+    <element xsi:type="archimate:BusinessRole" name="Gerenciar disponibilidade nos aeroportos para manutenções" id="id-381f84283a7a4ef1b0010aaebec06e4c"/>
+    <element xsi:type="archimate:BusinessRole" name="Executar planejamento de manutenções" id="id-582df91c04234d81946f708cdf68912c"/>
+    <element xsi:type="archimate:BusinessRole" name="Comprar componentes para manutenções (copy)" id="id-21548538369646db807fa754c26cf529"/>
+    <element xsi:type="archimate:BusinessRole" name="Gerenciar disponibilidade nos aeroportos para manutenções (copy)" id="id-dc9a58d44b7749cbb050e2ff1f2254a2"/>
   </folder>
   <folder name="Application" id="id-04af9ff2541a4c0f8c906eab5cade1e8" type="application"/>
   <folder name="Technology &amp; Physical" id="id-e5f8fd52cd3d486aa214251fa2980510" type="technology"/>
   <folder name="Motivation" id="id-e7ed6e4aa077445489ecc1e6cb0a6920" type="motivation">
     <element xsi:type="archimate:Outcome" name="Indicadores de desempenho de vendas" id="id-b8ed6ac2c2924a2ab2be4771da3eaa37"/>
+    <element xsi:type="archimate:Constraint" name="Só pode ser" id="id-fff49b5ad47e4d158d6d7244ed18f945"/>
+    <element xsi:type="archimate:Outcome" name="Reserva de bilhetes aéreos" id="id-5666f8a55d384779ad044f8c1519562e"/>
+    <element xsi:type="archimate:Driver" name="Necessidade de movimentação de pessoas " id="id-0a0128203fdf4b9ab8b62c3aa687a323"/>
+    <element xsi:type="archimate:Driver" name="Economia das cidades" id="id-f9c27641132641b59acc1e5f433c8fbd"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-64677d76b2cc4b579112f674c66df391" type="implementation_migration"/>
   <folder name="Other" id="id-fd9b3975ede54ebca4732962640508db" type="other"/>
@@ -154,6 +165,9 @@
     <element xsi:type="archimate:FlowRelationship" id="id-4827fedeb4e3478f81e2667b2ea1481b" source="id-a2485af495ab4047ba46eb961db45048" target="id-b7ed7e3cf49046cdb00befd86689c52b"/>
     <element xsi:type="archimate:FlowRelationship" id="id-06953170f0e34bc0b898a97692352600" source="id-b7ed7e3cf49046cdb00befd86689c52b" target="id-47207eeb950d4054b2d1d59b75693638"/>
     <element xsi:type="archimate:FlowRelationship" id="id-0b7f19e78487425689af19da46ecaa31" source="id-47207eeb950d4054b2d1d59b75693638" target="id-387723aa954e49a68ad520857037a0e9"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-5f8724f054d84b3aa7709f0dafbe09bc" source="id-cb4006125c2d49f59161ebae6a7877b4" target="id-fff49b5ad47e4d158d6d7244ed18f945"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-0c3fad9a06004733962b1cd3de3fe423" source="id-4c16e7b861ff43898981f5c2a68a4866" target="id-0a0128203fdf4b9ab8b62c3aa687a323"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-e10ed5bf8a8d4334a042fa99e4110b0f" source="id-4c16e7b861ff43898981f5c2a68a4866" target="id-f9c27641132641b59acc1e5f433c8fbd"/>
   </folder>
   <folder name="Views" id="id-ee689ee0f38e436ab344d2cf1084f44d" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Presidência e Conselho - Business Model" id="id-c23abdf956fa40398cc59e147a6ccba3">
@@ -283,20 +297,22 @@
         </child>
       </child>
       <child xsi:type="archimate:Group" id="id-b1aad00792024b3db93ea1893c3c33a2" name="Departamento de Operações" textAlignment="1">
-        <bounds x="84" y="2292" width="673" height="889"/>
+        <bounds x="84" y="2232" width="709" height="949"/>
         <child xsi:type="archimate:DiagramObject" id="id-8454459c22b64af6a888265f7b24b616" targetConnections="id-a391d00b139e42239f28da312e705cb3" archimateElement="id-e412375aee9649d2bfa2215f2d3ffc50">
-          <bounds x="432" y="57" width="193" height="61"/>
+          <bounds x="432" y="117" width="193" height="61"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-c8b717e8b5494ed5a3e69e771b06e80f" targetConnections="id-eef1fb4f2743444a97fe1100502da39a" archimateElement="id-4c16e7b861ff43898981f5c2a68a4866">
-          <bounds x="216" y="57" width="144" height="61"/>
+          <bounds x="216" y="117" width="144" height="61"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-a391d00b139e42239f28da312e705cb3" source="id-c8b717e8b5494ed5a3e69e771b06e80f" target="id-8454459c22b64af6a888265f7b24b616" archimateRelationship="id-e8b63c9d8cdd4effa20e66f9fd10a448"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c074d0bdd75545339900e7ec2b272f4e" source="id-c8b717e8b5494ed5a3e69e771b06e80f" target="id-b3d36aea5822426bba4288d58379687d" archimateRelationship="id-0c3fad9a06004733962b1cd3de3fe423"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c231f95e9c4a4a20a1ce8c6690f110e1" source="id-c8b717e8b5494ed5a3e69e771b06e80f" target="id-72a5aed0469949cba23566dcd70cd039" archimateRelationship="id-e10ed5bf8a8d4334a042fa99e4110b0f"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-106fee84d02b4bc39be4f45bb5e3a250" archimateElement="id-b4107b8e150547e39cbedf43ded2d2ac">
-          <bounds x="36" y="60" width="120" height="55"/>
+          <bounds x="36" y="120" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-eef1fb4f2743444a97fe1100502da39a" source="id-106fee84d02b4bc39be4f45bb5e3a250" target="id-c8b717e8b5494ed5a3e69e771b06e80f" archimateRelationship="id-2bd9e89a64e24001a1c1e1ecd6e46acc"/>
         </child>
         <child xsi:type="archimate:Group" id="id-0b7125573608465f86f360d0ef31fe05" name="Setor de Coordenação de Voos" textAlignment="1">
-          <bounds x="24" y="144" width="397" height="109"/>
+          <bounds x="24" y="204" width="397" height="109"/>
           <child xsi:type="archimate:DiagramObject" id="id-82b8dcd522ad4d0f81ef79b2f312620f" archimateElement="id-b6bdbaa0d3594e438c0fb33863fec250">
             <bounds x="12" y="36" width="109" height="65"/>
           </child>
@@ -305,19 +321,19 @@
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-292a1bfca9f94ee099f99ff4f55b7157" name="Setor de Planejamento" textAlignment="1">
-          <bounds x="456" y="144" width="181" height="109"/>
+          <bounds x="456" y="204" width="181" height="109"/>
           <child xsi:type="archimate:DiagramObject" id="id-bb4cde5c39604222b2661df9655128f4" archimateElement="id-fe2adf11997b42f2af3e52bda9188e56">
             <bounds x="12" y="36" width="157" height="65"/>
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-b9e933659ac3424f8ac86c8cef7e6c28" name="Setor de Planejamento" textAlignment="1">
-          <bounds x="24" y="288" width="181" height="109"/>
+          <bounds x="24" y="348" width="181" height="109"/>
           <child xsi:type="archimate:DiagramObject" id="id-7ecb2935605e4279bbe218a1a2c90a1b" archimateElement="id-ba48ab692905490fb4a87cef2f3e75fc">
             <bounds x="12" y="36" width="157" height="65"/>
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-5af6502953a14abeb5cd42604aedd3fb" name="Despacho Operacional" textAlignment="1">
-          <bounds x="216" y="288" width="421" height="109"/>
+          <bounds x="216" y="348" width="421" height="109"/>
           <child xsi:type="archimate:DiagramObject" id="id-a79f1430b1324b51a8e90f6f4bdec4ef" archimateElement="id-a9b9090a4dd6450bb9bd3b9153ed1a50">
             <bounds x="240" y="36" width="157" height="65"/>
           </child>
@@ -326,13 +342,13 @@
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-06d174202ff24bd4a7933051d06df533" name="Escala de Tripulante" textAlignment="1">
-          <bounds x="24" y="756" width="181" height="109"/>
+          <bounds x="24" y="816" width="181" height="109"/>
           <child xsi:type="archimate:DiagramObject" id="id-035640df21874833be66ab08dcbb77f6" archimateElement="id-5b4b95111fec4333ac84379293400a78">
             <bounds x="12" y="36" width="157" height="65"/>
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-cf2fb6965c674f4f8aa02ac6b95bcd7f" name="Check-in" textAlignment="1">
-          <bounds x="24" y="420" width="613" height="313"/>
+          <bounds x="24" y="480" width="613" height="313"/>
           <child xsi:type="archimate:DiagramObject" id="id-0ac4b9d7fd3242719bc02889f9a9483a" archimateElement="id-f78da3707c7b4a6b8057a1222adbb177">
             <bounds x="12" y="36" width="109" height="61"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-0c20b3cad0234f0f911039ba1db8701b" source="id-0ac4b9d7fd3242719bc02889f9a9483a" target="id-5793040b2d954c4e95d9ca273258a6a9" archimateRelationship="id-8234a3a0816f4c79a7eed7d4630dbcfb"/>
@@ -359,19 +375,43 @@
             <bounds x="192" y="204" width="181" height="65"/>
           </child>
         </child>
+        <child xsi:type="archimate:DiagramObject" id="id-72a5aed0469949cba23566dcd70cd039" targetConnections="id-c231f95e9c4a4a20a1ce8c6690f110e1" archimateElement="id-f9c27641132641b59acc1e5f433c8fbd">
+          <bounds x="120" y="48" width="169" height="37"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b3d36aea5822426bba4288d58379687d" targetConnections="id-c074d0bdd75545339900e7ec2b272f4e" archimateElement="id-0a0128203fdf4b9ab8b62c3aa687a323">
+          <bounds x="300" y="48" width="193" height="37"/>
+        </child>
       </child>
       <child xsi:type="archimate:Group" id="id-4d313e5358064f0c9d85ee04c060e4c5" name="Departamento de Manutenção" textAlignment="1">
-        <bounds x="84" y="3252" width="673" height="265"/>
-        <child xsi:type="archimate:Group" id="id-e3de9427f35f404f9d2268f2bf1cdc0b" name="Setor de engenharia" textAlignment="1">
-          <bounds x="24" y="48" width="625" height="193"/>
+        <bounds x="84" y="3204" width="673" height="505"/>
+        <child xsi:type="archimate:Group" id="id-e3de9427f35f404f9d2268f2bf1cdc0b" name="Setor de Engenharia" textAlignment="1">
+          <bounds x="24" y="36" width="625" height="133"/>
           <child xsi:type="archimate:DiagramObject" id="id-3270725937d54cd1b44ce1589e66ae2c" archimateElement="id-065ee0c72ead4a21b45ee4347bcf531d">
             <bounds x="12" y="36" width="157" height="65"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-e6e2e3a8c86345089dd00f635253679a" archimateElement="id-20c813415d89453e8672c26606496951">
-            <bounds x="180" y="36" width="157" height="65"/>
+            <bounds x="204" y="36" width="157" height="65"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-85cde4b7f8954f3ca56d2987072685c1" archimateElement="id-159fc00d993242bfa0d3a74dccb396fd">
-            <bounds x="360" y="36" width="157" height="65"/>
+            <bounds x="396" y="36" width="157" height="65"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Group" id="id-a80280829d3d48bfa25dc2a75f6352d9" name="Setor de Estoque" textAlignment="1">
+          <bounds x="24" y="204" width="624" height="121"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f881998929c9438abdd6b11cc1318f0e" archimateElement="id-733a999636a243fc9562e42f1d4c0557">
+            <bounds x="24" y="41" width="133" height="61"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-62d87527d6ed4f7fae2c7b1f1e5bca2e" archimateElement="id-7ed3f089c7b74788b2b59105bbdebfed">
+            <bounds x="192" y="40" width="156" height="64"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d4b855965a6e44319b86d0941f2b35c9" archimateElement="id-381f84283a7a4ef1b0010aaebec06e4c">
+            <bounds x="384" y="42" width="180" height="60"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Group" id="id-e42a9080d0214445a0b2cd5239854a21" name="Setor de Manutenção" textAlignment="1">
+          <bounds x="25" y="360" width="624" height="121"/>
+          <child xsi:type="archimate:DiagramObject" id="id-2e33c3b4a9a342bf8b9f0a841acbd916" archimateElement="id-582df91c04234d81946f708cdf68912c">
+            <bounds x="24" y="36" width="132" height="72"/>
           </child>
         </child>
       </child>
